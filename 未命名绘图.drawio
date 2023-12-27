@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T01:51:11.032Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="_mWc7GIcgW0Jko-HfO-E" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T03:13:50.369Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5Qr6m2bHdNGn7l8YLma-" version="22.1.11" type="github">
   <diagram name="第 1 页" id="wUX5twKW95JPzg22RwcC">
-    <mxGraphModel dx="830" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1272" dy="853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -254,7 +254,7 @@
             <mxPoint x="610" y="970" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-6" value="tk集群上，把pod调度到指定集群的 sku label的节点上" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-6" value="tk集群上，把pod调度到指定aec2集群的 sku label的节点上" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="940" y="780" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="ClvjLJVBoNTASaHAyqXc-7" value="用户创建实例的扩缩&lt;br&gt;容策略和规则" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1">
@@ -283,6 +283,37 @@
             <mxPoint x="145" y="1230" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-12" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="1213" as="sourcePoint" />
+            <mxPoint x="612" y="1213" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-14" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="622" y="1239" as="sourcePoint" />
+            <mxPoint x="610" y="1279" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="602" y="1239" />
+              <mxPoint x="650" y="1239" />
+              <mxPoint x="670" y="1259" />
+              <mxPoint x="650" y="1279" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-15" value="rp将rule放到到&lt;br&gt;cron任务中执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ClvjLJVBoNTASaHAyqXc-14">
+          <mxGeometry x="0.2408" y="-2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-16" value="4.3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ClvjLJVBoNTASaHAyqXc-14">
+          <mxGeometry x="-0.9915" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-17" value="到达规则时间，更新实例表spec.replica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1290" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
