@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T14:15:04.808Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="hHsEOHN5NVmcLR7VmrU3" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T03:48:12.918Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="fGGwHW2K5lfsj4FvY9HO" version="22.1.11" type="github">
   <diagram name="第 1 页" id="HNJt-ctz2EsQI-Ii_CAY">
-    <mxGraphModel dx="1122" dy="1922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1272" dy="2022" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,10 +45,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="orjeHicMK5c4CxGKX0hl-24" value="共享存储卷：/tmp/shared-storage/{pod前缀}/{模型hash}" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="orjeHicMK5c4CxGKX0hl-24" value="数据卷：/tmp/shared-storage/{pod前缀}/{模型hash}" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="290" y="308" width="150" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="orjeHicMK5c4CxGKX0hl-25" value="模型下载配置secret" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="orjeHicMK5c4CxGKX0hl-25" value="数据卷secret&lt;br&gt;模型下载配置" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="361" y="80" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="orjeHicMK5c4CxGKX0hl-28" value="ams-mq-proxy" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -183,11 +183,28 @@
             <mxPoint x="18" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="orjeHicMK5c4CxGKX0hl-61" value="&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;https://{租户code}.ams-endpoint.cn-sh-01&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;hgvZGUV7pVpP9-FOyaPt&quot;&gt;.sensecoreapi.tech/{svc_name}&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="844.91" y="480" width="60" height="30" as="geometry" />
+        <mxCell id="orjeHicMK5c4CxGKX0hl-61" value="&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;https://{租户code}.ams-endpoint.cn-sh-01&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;hgvZGUV7pVpP9-FOyaPt&quot;&gt;.sensecoreapi.tech/{svc_name}&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;hgvZGUV7pVpP9-FOyaPt&quot;&gt;请求头带上token&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="790" y="475" width="185.09" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="f_cqw0eAIBGD6JtES9ju-1" value="tk" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="f_cqw0eAIBGD6JtES9ju-1" value="tk" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="550" y="-40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Db9b9CFWh4Ud0nBWQFEp-1" value="云管服务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="290" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Db9b9CFWh4Ud0nBWQFEp-2" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="orjeHicMK5c4CxGKX0hl-48" target="Db9b9CFWh4Ud0nBWQFEp-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="370" as="sourcePoint" />
+            <mxPoint x="820" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Db9b9CFWh4Ud0nBWQFEp-3" value="鉴权toeken" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Db9b9CFWh4Ud0nBWQFEp-2">
+          <mxGeometry x="0.178" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Db9b9CFWh4Ud0nBWQFEp-4" value="资源指标&lt;br&gt;调用指标&lt;br&gt;由其他组件收集" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="164" y="10" width="106" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
