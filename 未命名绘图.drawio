@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T03:17:28.694Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="bmdo4V12sPRZD0lXVCpg" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T03:25:44.122Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="OHjo38hYnr5o7ZABZKMQ" version="22.1.12" type="github">
   <diagram name="第 1 页" id="wUX5twKW95JPzg22RwcC">
-    <mxGraphModel dx="1272" dy="853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1060" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,8 +52,8 @@
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-30" value="查instance,service表" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="612" y="869" as="sourcePoint" />
-            <mxPoint x="772" y="869" as="targetPoint" />
+            <mxPoint x="612" y="896" as="sourcePoint" />
+            <mxPoint x="772" y="896" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -89,7 +89,7 @@
         <mxCell id="F8USyMMURStgGjkpNutp-43" value="cci 服务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="880" y="538" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="F8USyMMURStgGjkpNutp-44" value="增量推理服务通过&lt;br&gt;db hook调用cci接口" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
+        <mxCell id="F8USyMMURStgGjkpNutp-44" value="增量推理实例，&lt;br&gt;渲染推理框架template&lt;br&gt;通过db hook调用cci接口" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="780" y="590" as="sourcePoint" />
             <mxPoint x="900" y="590" as="targetPoint" />
@@ -135,17 +135,17 @@
         <mxCell id="F8USyMMURStgGjkpNutp-56" value="1.7" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="F8USyMMURStgGjkpNutp-55" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="F8USyMMURStgGjkpNutp-57" value="cci app和实例表信息有diff，&lt;br&gt;更新instance,service表" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
+        <mxCell id="F8USyMMURStgGjkpNutp-57" value="cci app和实例表信息有diff，&lt;br&gt;重新渲染推理框架template，&lt;br&gt;调用cci" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="612" y="809" as="sourcePoint" />
-            <mxPoint x="770" y="809" as="targetPoint" />
+            <mxPoint x="900" y="809" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-59" value="刷新推理服务页面" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="146" y="869" as="sourcePoint" />
-            <mxPoint x="600" y="869" as="targetPoint" />
+            <mxPoint x="146" y="896" as="sourcePoint" />
+            <mxPoint x="600" y="896" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-60" value="2.1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="F8USyMMURStgGjkpNutp-59" connectable="0" vertex="1">
@@ -153,8 +153,8 @@
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-63" value="rp 整合 实例表 和 cci的信息后，返回给前端" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-0.0003" relative="1" as="geometry">
-            <mxPoint x="602" y="987" as="sourcePoint" />
-            <mxPoint x="145" y="987" as="targetPoint" />
+            <mxPoint x="602" y="1014" as="sourcePoint" />
+            <mxPoint x="145" y="1014" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -170,8 +170,8 @@
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-66" value="推理服务更新" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="146" y="1017" as="sourcePoint" />
-            <mxPoint x="600" y="1017" as="targetPoint" />
+            <mxPoint x="146" y="1044" as="sourcePoint" />
+            <mxPoint x="600" y="1044" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -198,8 +198,8 @@
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-72" value="更新instance,service表" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="612" y="1018" as="sourcePoint" />
-            <mxPoint x="770" y="1018" as="targetPoint" />
+            <mxPoint x="612" y="1045" as="sourcePoint" />
+            <mxPoint x="770" y="1045" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -216,109 +216,115 @@
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-75" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="770" y="910" as="sourcePoint" />
-            <mxPoint x="610" y="910" as="targetPoint" />
+            <mxPoint x="770" y="937" as="sourcePoint" />
+            <mxPoint x="610" y="937" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-76" value="rp http接口返回推理服务信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-0.0003" relative="1" as="geometry">
-            <mxPoint x="602" y="1078" as="sourcePoint" />
-            <mxPoint x="145" y="1078" as="targetPoint" />
+            <mxPoint x="602" y="1105" as="sourcePoint" />
+            <mxPoint x="145" y="1105" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F8USyMMURStgGjkpNutp-78" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=0.903;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="770" y="1058.045" as="sourcePoint" />
-            <mxPoint x="610" y="1058" as="targetPoint" />
+            <mxPoint x="770" y="1085.045" as="sourcePoint" />
+            <mxPoint x="610" y="1085" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-3" value="拉取实例最新状态信息" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-3" value="拉取实例最新状态信息" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="612" y="940" as="sourcePoint" />
-            <mxPoint x="910" y="940" as="targetPoint" />
+            <mxPoint x="612" y="967" as="sourcePoint" />
+            <mxPoint x="910" y="967" as="targetPoint" />
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="612" y="941" />
-              <mxPoint x="902" y="941" />
-              <mxPoint x="902" y="940" />
+              <mxPoint x="612" y="968" />
+              <mxPoint x="902" y="968" />
+              <mxPoint x="902" y="967" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-4" value="2.3" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="ClvjLJVBoNTASaHAyqXc-3">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-4" value="2.3" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="ClvjLJVBoNTASaHAyqXc-3" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-5" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-5" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="900" y="970" as="sourcePoint" />
-            <mxPoint x="610" y="970" as="targetPoint" />
+            <mxPoint x="900" y="997" as="sourcePoint" />
+            <mxPoint x="610" y="997" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-6" value="tk集群上，把pod调度到指定aec2集群的 sku label的节点上" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-6" value="tk集群上，把pod调度到指定aec2集群的 sku label的节点上" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="940" y="780" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-7" value="用户创建实例的扩缩&lt;br&gt;容策略和规则" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-7" value="用户创建实例的扩缩&lt;br&gt;容策略和规则" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="148" y="1180" as="sourcePoint" />
-            <mxPoint x="602" y="1180" as="targetPoint" />
+            <mxPoint x="148" y="1207" as="sourcePoint" />
+            <mxPoint x="602" y="1207" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-8" value="4.1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="ClvjLJVBoNTASaHAyqXc-7">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-8" value="4.1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="ClvjLJVBoNTASaHAyqXc-7" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-9" value="写入plan 和 instance表" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-9" value="写入plan 和 instance表" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="612" y="1180" as="sourcePoint" />
-            <mxPoint x="770" y="1180" as="targetPoint" />
+            <mxPoint x="612" y="1207" as="sourcePoint" />
+            <mxPoint x="770" y="1207" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-10" value="4.2" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="ClvjLJVBoNTASaHAyqXc-9">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-10" value="4.2" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="ClvjLJVBoNTASaHAyqXc-9" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-11" value="rp http接口返回扩缩容策略规则" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-11" value="rp http接口返回扩缩容策略规则" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry x="0.0009" relative="1" as="geometry">
-            <mxPoint x="602" y="1230" as="sourcePoint" />
-            <mxPoint x="145" y="1230" as="targetPoint" />
+            <mxPoint x="602" y="1257" as="sourcePoint" />
+            <mxPoint x="145" y="1257" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-12" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-12" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="770" y="1213" as="sourcePoint" />
-            <mxPoint x="612" y="1213" as="targetPoint" />
+            <mxPoint x="770" y="1240" as="sourcePoint" />
+            <mxPoint x="612" y="1240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-14" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-14" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="622" y="1239" as="sourcePoint" />
-            <mxPoint x="610" y="1279" as="targetPoint" />
+            <mxPoint x="622" y="1266" as="sourcePoint" />
+            <mxPoint x="610" y="1306" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="602" y="1239" />
-              <mxPoint x="650" y="1239" />
-              <mxPoint x="670" y="1259" />
-              <mxPoint x="650" y="1279" />
+              <mxPoint x="602" y="1266" />
+              <mxPoint x="650" y="1266" />
+              <mxPoint x="670" y="1286" />
+              <mxPoint x="650" y="1306" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-15" value="rp将rule放到到&lt;br&gt;cron任务中执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ClvjLJVBoNTASaHAyqXc-14">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-15" value="rp将rule放到到&lt;br&gt;cron任务中执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ClvjLJVBoNTASaHAyqXc-14" vertex="1" connectable="0">
           <mxGeometry x="0.2408" y="-2" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-16" value="4.3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ClvjLJVBoNTASaHAyqXc-14">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-16" value="4.3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ClvjLJVBoNTASaHAyqXc-14" vertex="1" connectable="0">
           <mxGeometry x="-0.9915" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-17" value="到达规则时间，更新实例表spec.replica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="1293" width="120" height="30" as="geometry" />
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-17" value="到达规则时间，更新实例表spec.replica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="620" y="1320" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ClvjLJVBoNTASaHAyqXc-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="ClvjLJVBoNTASaHAyqXc-18" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="612" y="1290" as="sourcePoint" />
-            <mxPoint x="760" y="1290" as="targetPoint" />
+            <mxPoint x="612" y="1317" as="sourcePoint" />
+            <mxPoint x="760" y="1317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4HX7yGJDfPaI8yyW__2-1" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="902" y="864" as="sourcePoint" />
+            <mxPoint x="614" y="864" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
