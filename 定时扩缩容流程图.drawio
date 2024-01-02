@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-29T02:40:57.378Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Bfq3kOLKVkpyi1sfXZus" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-02T01:34:04.111Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="GsR-TgU5N7GrgTcVZeyJ" version="22.1.15" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1122" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -290,7 +290,7 @@
         <mxCell id="yG3EtKwMuxylufSLAqyE-92" value="1.5" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" parent="WIyWlLk6GJQsqaUBKTNV-1" connectable="0" vertex="1">
           <mxGeometry x="448" y="821" as="geometry" />
         </mxCell>
-        <mxCell id="yG3EtKwMuxylufSLAqyE-93" value="db hooks整合推理框架&lt;br&gt;template，调用cci接口&amp;nbsp;" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+        <mxCell id="yG3EtKwMuxylufSLAqyE-93" value="db hooks调用cci接口&lt;br&gt;更新cci app" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
             <mxPoint x="868" y="838" as="sourcePoint" />
             <mxPoint x="983" y="838" as="targetPoint" />
@@ -327,7 +327,7 @@
         <mxCell id="yG3EtKwMuxylufSLAqyE-99" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#030303;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="980" y="855" width="30" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="-aaz8v4yLVGI1uPHLCsT-0" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#030303;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="-aaz8v4yLVGI1uPHLCsT-0" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#030303;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1112.63" y="903" width="30" height="10" as="geometry" />
         </mxCell>
       </root>
